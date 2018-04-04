@@ -1,8 +1,8 @@
 .catalog {
   width: 100%;
+  height: 100vh;
   min-width: 420px;
   max-width: 1120px;
-  box-shadow: 0 0 10px #fff;
   margin: 0 auto;
 }
 
@@ -27,15 +27,12 @@
   width: 100%;
   max-width: 320px;
   max-height: 480px;
-  background-color: gray;
+  background-color: #f2f2f2;
 }
 
-.catalog__item:first-child {
-  background-color: lightgray;
-}
-
-.catalog__item:last-child {
-  background-color: darkgrey;
+.catalog__link {
+  color: #666666;
+  cursor: pointer;
 }
 
 @media (max-width: 1000px) {

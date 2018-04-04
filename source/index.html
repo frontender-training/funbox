@@ -13,7 +13,54 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="inner-page">
-  <div class="catalog__title">Ты сегодня покормил кота?</div>
+  <section class="catalog">
+    <h1 class="catalog__title">Ты сегодня покормил кота?</h1>
+    <ul class="catalog__list">
+      <li class="catalog__item">
+        <a class="catalog__link product" href="catalog-item.html">
+          <div class="product__note">
+            <span class="product__note--not-chosen">Сказочное заморское яство</span>
+            <span class="product__note--selected">Котэ не одобряет?</span>
+          </div>
+          <div class="product__description">
+            <h2 class="product__title">Нямушка <span>c фуа-гра</span></h2>
+            <div class="product__bonus">10 порций <br>мышь в подарок</div>
+            <img class="product__image" src="img/cat.jpg" alt="Нямушка c фуа-гра">
+            <span class="product__weight">0,5 кг</span>
+          </div>
+        </a>
+      </li>
+      <li class="catalog__item">
+        <a class="catalog__link product product-selected" href="catalog-item.html">
+          <div class="product__note">
+            <span class="product__note--not-chosen">Сказочное заморское яство</span>
+            <span class="product__note--selected">Котэ не одобряет?</span>
+          </div>
+          <div class="product__description">
+            <h2 class="product__title">Нямушка <span>c рыбой</span></h2>
+            <div class="product__bonus">40 порций<br>2 мыши в подарок</div>
+            <img class="product__image" src="img/cat.jpg" alt="Нямушка c рыбой">
+            <span class="product__weight">2 кг</span>
+          </div>
+        </a>
+      </li>
+      <li class="catalog__item">
+        <a class="catalog__link product product-disabled" href="catalog-item.html">
+          <div class="product__note">
+            <span class="product__note--not-chosen">Сказочное заморское яство</span>
+            <span class="product__note--selected">Котэ не одобряет?</span>
+          </div>
+          <div class="product__description">
+            <h2 class="product__title">Нямушка <span>c рыбой</span></h2>
+            <div class="product__bonus">100 порций<br>5 мышей в подарок<br> заказчик доволен</div>
+            <img class="product__image" src="img/cat.jpg" alt="Нямушка c рыбой">
+            <span class="product__weight">5 кг</span>
+          </div>
+        </a>
+      </li>
+    </ul>
+  </section>
+
   <script src="js/scripts.js"></script>
 </body>
 </html>

@@ -566,6 +566,10 @@ body {
     justify-content: center;
   }
 
+  .catalog__item {
+    margin-bottom: 50px;
+  }
+
   .catalog__item:first-child {
     margin-right: 6.25%;
   }
@@ -578,8 +582,9 @@ body {
     display: block;
   }
 
+  .catalog__item,
   .catalog__item:first-child {
-    margin: 0 auto;
+    margin: 0 auto 50px;
   }
 }
 
@@ -622,6 +627,16 @@ body {
   background-color: #e62e7a;
 }
 
+.product--selected:hover .product__note,
+.product--selected:focus .product__note {
+  display: none;
+}
+
+.product--selected:hover .product__note--selected,
+.product--selected:focus .product__note--selected {
+  display: block;
+}
+
 .product--selected:hover .product__notes,
 .product--selected:focus .product__notes,
 .product--selected:hover .product__notes::after,
@@ -634,6 +649,7 @@ body {
 .product--disabled,
 .product--disabled .product__title {
   color: #b3b3b3;
+  pointer-events: none;
 }
 
 .product--disabled .product__notes,
@@ -651,13 +667,27 @@ body {
   background-color: #b3b3b3;
 }
 
-.product--disabled:hover .product__notes,
-.product--disabled:focus .product__notes,
-.product--disabled:hover .product__notes::after,
-.product--disabled:focus .product__notes::after,
-.product--disabled:hover .product__description,
-.product--disabled:focus .product__description {
-  border-color: #b3b3b3;
+.product ~ .catalog__cat-comment--selected,
+.product ~ .catalog__cat-comment--disabled {
+  display: none;
+}
+
+.product--selected ~ .catalog__cat-comment--default,
+.product--selected ~ .catalog__cat-comment--desabled {
+  display: none;
+}
+
+.product--selected ~ .catalog__cat-comment--selected {
+  display: block;
+}
+
+.product--disabled ~ .catalog__cat-comment--default,
+.product--disabled ~ .catalog__cat-comment--selected {
+  display: none;
+}
+
+.product--disabled ~ .catalog__cat-comment--disabled {
+  display: block;
 }
 
 .product__notes {
@@ -678,8 +708,8 @@ body {
 .product__notes::before {
   position: absolute;
   content:'';
-  top: -4px;
-  left: -45px;
+  top: -3px;
+  left: -44px;
   border: 22.5px solid transparent;
   border-right: 22.5px solid #f2f2f2;
   border-bottom: 22.5px solid #f2f2f2;

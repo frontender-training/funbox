@@ -55,6 +55,10 @@
     justify-content: center;
   }
 
+  .catalog__item {
+    margin-bottom: 50px;
+  }
+
   .catalog__item:first-child {
     margin-right: 6.25%;
   }
@@ -67,7 +71,8 @@
     display: block;
   }
 
+  .catalog__item,
   .catalog__item:first-child {
-    margin: 0 auto;
+    margin: 0 auto 50px;
   }
 }

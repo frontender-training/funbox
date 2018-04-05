@@ -23,6 +23,10 @@ body {
   background-position: 0 0;
 }
 
+.hidden {
+  display: none;
+}
+
 .visually-hidden {
   position: absolute;
   overflow: hidden;

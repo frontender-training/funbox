@@ -3,6 +3,78 @@
   height: inherit;
 }
 
+.product:hover .product__weight,
+.product:focus .product__weight {
+  background-color: #2ea8e5;
+}
+
+.product:hover .product__notes,
+.product:focus .product__notes,
+.product:hover .product__notes::after,
+.product:focus .product__notes::after,
+.product:hover .product__description,
+.product:focus .product__description {
+  border-color: #2ea8e5;
+}
+
+.product:hover + .catalog__cat-comment > .product__link,
+.product:focus + .catalog__cat-comment > .product__link {
+  color: #2ea8e5;
+}
+
+.product--selected .product__notes,
+.product--selected .product__description {
+  border-color: #d91667;
+}
+
+.product--selected .product__weight,
+.product--selected .product__notes::after {
+  background-color: #d91667;
+}
+
+.product--selected:hover .product__weight,
+.product--selected:focus .product__weight {
+  background-color: #e62e7a;
+}
+
+.product--selected:hover .product__notes,
+.product--selected:focus .product__notes,
+.product--selected:hover .product__notes::after,
+.product--selected:focus .product__notes::after,
+.product--selected:hover .product__description,
+.product--selected:focus .product__description {
+  border-color: #e62e7a;
+}
+
+.product--disabled,
+.product--disabled .product__title {
+  color: #b3b3b3;
+}
+
+.product--disabled .product__notes,
+.product--disabled .product__description {
+  border-color: #b3b3b3;
+}
+
+.product--disabled .product__weight,
+.product--disabled .product__notes::after {
+  background-color: #b3b3b3;
+}
+
+.product--disabled:hover .product__weight,
+.product--disabled:focus .product__weight {
+  background-color: #b3b3b3;
+}
+
+.product--disabled:hover .product__notes,
+.product--disabled:focus .product__notes,
+.product--disabled:hover .product__notes::after,
+.product--disabled:focus .product__notes::after,
+.product--disabled:hover .product__description,
+.product--disabled:focus .product__description {
+  border-color: #b3b3b3;
+}
+
 .product__notes {
   font-size: 16px;
   line-height: 18px;
@@ -56,18 +128,17 @@
 
 .product__title {
   font-size: 48px;
-  line-height: 28px;
+  line-height: 31px;
   font-weight: bold;
   color: #000000;
   margin-top: 0;
   padding-left: 42px;
   padding-right: 42px;
-  margin-bottom: 5px;
+  margin-bottom: 12px;
 }
 
 .product__title span {
   font-size: 24px;
-  line-height: 48px;
 }
 
 .product__bonus {
@@ -79,6 +150,7 @@
 
 .product__image {
   display: block;
+  border-bottom-left-radius: 10px;
 }
 
 .product__weight {

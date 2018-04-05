@@ -45,12 +45,7 @@
   margin: 0;
 }
 
-.catalog__cat-comment--selected {
-  display: none;
-}
-
 .catalog__cat-comment--disabled {
-  display: none;
   color: #ffff66;
 }
 

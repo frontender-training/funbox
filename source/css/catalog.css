@@ -1,14 +1,14 @@
 .catalog {
-  width: 100%;
-  min-width: 420px;
-  max-width: 1120px;
+  width: inherit;
+  min-width: inherit;
+  max-width: inherit;
   margin: 0 auto;
 }
 
 .catalog__title {
   font-size: 36px;
   line-height: 36px;
-  font-family: Exo;
+  font-family: Exo, Arial, sans-serif;;
   color: #ffffff;
   text-align: center;
   margin-top: 0;
@@ -37,18 +37,6 @@
   cursor: pointer;
 }
 
-.catalog__cat-comment {
-  font-size: 13px;
-  line-height: 13px;
-  text-align: center;
-  color: #ffffff;
-  margin: 0;
-}
-
-.catalog__cat-comment--disabled {
-  color: #ffff66;
-}
-
 @media (max-width: 1000px) {
   .catalog__list {
     max-width: 720px;
@@ -66,7 +54,6 @@
 
 @media (max-width: 720px) {
   .catalog__list {
-    min-width: 420px;
     max-width: 719px;
     display: block;
   }

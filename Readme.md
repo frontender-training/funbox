@@ -4,7 +4,7 @@
 
 ## Описание проекта
 
-[Демо](https://cybersunt.github.io/fanbox/public) | [Техническое задание](Specification.md) | [Ответы на вопросы](FAQ.md)
+[Демо](https://cybersunt.github.io/funbox/public) | [Техническое задание](Specification.md) | [Ответы на вопросы](FAQ.md)
 
 * **Используемые технологии**: HTML5, CSS3, JS(ES5)
 * **Сетка:** Резинова
